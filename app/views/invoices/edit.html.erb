@@ -1,0 +1,45 @@
+<%= form_for [account, invoice] do |f| %>
+  <div>
+    <%= f.text_field :uid %>
+  </div>
+
+  <div>
+    <%= f.text_field :date %>
+  </div>
+
+  <div>
+    <%= f.text_area :additional_references %>
+  </div>
+
+  <div>
+    <%= f.text_field :account_name %>
+  </div>
+
+  <div>
+    <%= f.text_field :account_info %>
+  </div>
+
+  <div>
+    <%= f.text_field :customer_name %>
+  </div>
+
+  <div>
+    <%= f.text_area :customer_address %>
+  </div>
+
+  <div>
+    <%= f.text_field :project_name %>
+  </div>
+
+  <div>
+    <%= f.text_area :project_description %>
+  </div>
+
+  <div>
+    <%= f.text_area :account_terms_and_policies %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

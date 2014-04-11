@@ -1,0 +1,23 @@
+<%= form_for user, url: signup_path do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= error_message_for user, :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :email %>
+    <%= error_message_for user, :email %><br>
+    <%= f.text_field :email %>
+  </div>
+
+  <div>
+    <%= f.label :password %>
+    <%= error_message_for user, :password %><br>
+    <%= f.text_field :password %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

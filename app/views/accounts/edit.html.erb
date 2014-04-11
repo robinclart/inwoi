@@ -1,0 +1,24 @@
+<%= form_for account do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= error_message_for account, :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :info %>
+    <%= error_message_for account, :info %><br>
+    <%= f.text_area :info %>
+  </div>
+
+  <div>
+    <%= f.label :terms_and_policies %>
+    <%= error_message_for account, :terms_and_policies %><br>
+    <%= f.text_area :terms_and_policies %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
+

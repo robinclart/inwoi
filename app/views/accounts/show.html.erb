@@ -1,0 +1,10 @@
+<h1 data-template="account.name">
+  <%= account.name %>
+</h1>
+
+<%= invoices.each do |invoice| %>
+  <%= link_to invoice.uid, [:edit, account, invoice] %>
+<% end %>
+
+<%= link_to t('accounts.edit.link'), [:edit, account] %>
+<%= link_to t('invoices.new.link'), [:new, account, :invoice] %>

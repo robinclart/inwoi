@@ -1,0 +1,11 @@
+<%= form_for [account, invoice] do |f| %>
+  <div>
+    <%= f.hidden_field :account_name %>
+    <%= f.hidden_field :account_info %>
+    <%= f.text_field :uid %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
